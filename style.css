@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    font-weight: bold;
+    text-align:center;
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar{
+    color: aqua;
+    grid-area: sidebar ;
+    text-align: left;
+}
+
+.main{
+    color: blueviolet;
+    grid-area:main;
+}
+
+.footer{
+    color: rgb(25, 34, 34);
+    font-style: italic;
+    grid-area:footer;
+}
+
+.grid_container{
+    text-align: center;
+    display: grid;
+    gap: 15px;
+    grid-template-columns:  25%;
+    grid-template-rows: 33%;
+    grid-template-areas: 
+            "header header header header"
+            "sidebar sidebar main main"
+            "sidebar sidebar footer footer";
+}
+.grid_container > div{
+    background-color:gray;
+}
